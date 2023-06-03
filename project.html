@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Ori Dent</title>
+    <link rel="stylesheet" href="./public/styles/project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Header Start -->
+      <div class="header">
+        <div class="logo-header">
+          <a href="./index.html">
+          <img src="./public/image/Photo Profile.jpg" alt="" />
+        </a>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./project.html">Project</a></li>
+        </ul>
+      </div>
+      <!-- Header End -->
+
+      <div class="container">
+        <div class="profile-container">
+          <div class="content-profile">
+            <h1>Software Engineer, Cyber Security, Software Designer</h1>
+            <p>
+              Hello, and welcome to my portfolio! My name is R. Rafly Pradana
+              Kusumah, and I am a dedicated Software Engineer specializing in
+              the development of dynamic and static website-based software
+              solutions.
+            </p>
+          </div>
+        </div>
+         <!-- Project Start -->
+      <div class="article-container">
+          <div class="article-list">
+            <div class="overlay"></div>
+            <div class="background-project">
+            <img style="background-color: #0000;" src="./public/image/nextJs.svg" alt="">
+          </div>
+            <h3>PPDB SMK Wikrama</h3>
+            <div class="tech-project">
+              <h4>Bootstrap</h4>
+              <h4>Mysql</h4>
+              <h4>Laravel</h4>
+            </div>
+            <p>
+              PPDB SMK Wikrama adalah sebuah Website Pendaftaran Peserta Didik Baru. yang memudahkan Peserta yang ingin mendaftar Sekkolah ke SMK Wikrama Bogor.
+            </p>
+            <div class="link-project">
+              <a><i class="fas fa-link" style="color: #d1d1d1;"></i> github.com </a>
+            </div>
+          </div>
+          <div class="article-list">
+            <div class="overlay"></div>
+            <div class="background-project">
+            <img style="background-color: #0000;" src="./public/image/expresjs.svg" alt="">
+          </div>
+          <h3>TicketPedia</h3>
+          <div class="tech-project">
+            <h4>ExpresJs Js</h4>
+            <h4>React Js</h4>
+            <h4>Next Js</h4>
+          </div>
+          <p>
+            TicketPedia adalah sebuah Website Pembelian berbagai Ticket. Seperti Ticket Bioskop, Bola, dan Konser.
+          </p>
+          <div class="link-project">
+            <a><i class="fas fa-link" style="color: #d1d1d1;"></i> github.com </a>
+          </div>
+
+          </div>
+          <div class="article-list">
+            <div class="overlay"></div>
+            <div class="background-project">
+            <img style="background-color: #fff;" src="./public/image/adonisJS.svg" alt="">
+          </div>
+          <h3>FieldTrack</h3>
+          <div class="tech-project">
+            <h4>ANTD Design</h4>
+            <h4>AdonisJS</h4>
+            <h4>Next Js</h4>
+          </div>
+          <p>
+            FieldTrack adalah sebuah Todo List yang memungkinkan kita tidak lupa dengan tugas dan teratur tugas kita. Seperti Jira.com
+          </p>
+            </p>
+            <div class="link-project">
+              <a><i class="fas fa-link" style="color: #d1d1d1;"></i> github.com </a>
+            </div>
+        </div>
+        <div class="article-list">
+          <div class="overlay"></div>
+          <div class="background-project">
+          <img style="background-color: #fff;" src="./public/image/antd.svg" alt="">
+        </div>
+        <h3>Styling FieldTrack</h3>
+        <div class="tech-project">
+          <h4>ANTD Design</h4>
+          <h4>CSS 3</h4>
+        </div>
+        <p>
+          Styling FieldTrack Saya Menggunakan ANTD Design dan CSS 3 Murni.
+        </p>
+          </p>
+          <div class="link-project">
+            <a><i class="fas fa-link" style="color: #d1d1d1;"></i> github.com </a>
+          </div>
+      </div>
+      <div class="article-list">
+        <div class="overlay"></div>
+        <div class="background-project">
+        <img style="background-color: #00758F;" src="./public/image/mysql.svg" alt="">
+      </div>
+      <h3>Still Learning</h3>
+      <div class="tech-project">
+        <h4>ExpresJs Js</h4>
+        <h4>React Js</h4>
+        <h4>Next Js</h4>
+      </div>
+      <p>
+        Still Learning adalah sebuah Website belajar, dimana kita bisa melakukan coding dalam website tersebut sambil menonton video tutorial.
+      </p>
+        </p>
+        <div class="link-project">
+          <a><i class="fas fa-link" style="color: #d1d1d1;"></i> github.com </a>
+        </div>
+    </div>
+      <!-- Project End -->
+      </div>
+    </div>
+          <!-- Footer Start -->
+          <footer>
+            <div class="container-footer">
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Certificate Holder</a></li>
+                <li><a href="">Project</a></li>
+              </ul>
+              <div class="brand-footer">
+                <h4>© 2023 TECH DENT. All rights reserved.</h4>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer End -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".header").classList.add("visible")
+      })
+
+      var prevScrollPos = window.pageYOffset
+
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset
+
+        if (prevScrollPos > currentScrollPos && currentScrollPos > 0) {
+          document.querySelector(".header").classList.add("visible")
+        } else {
+          document.querySelector(".header").classList.remove("visible")
+        }
+
+        prevScrollPos = currentScrollPos
+      }
+    </script>
+  </body>
+</html>

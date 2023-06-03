@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Ori Dent</title>
+    <link rel="stylesheet" href="./public/styles/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Header Start -->
+      <div class="header">
+        <div class="logo-header">
+          <a href="./index.html">
+          <img src="./public/image/Photo Profile.jpg" alt="" />
+        </a>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./project.html">Project</a></li>
+        </ul>
+      </div>
+      
+      <!-- Header End -->
+      <div class="container">
+        <div class="profile-container">
+          <div class="content-profile">
+            <h1>
+              I'm R.Rafly Pradana Kusumah. I live in Bogor City, where I
+              Software Engineer
+            </h1>
+            <p>
+              Hello, I am a passionate Software Engineer dedicated to creating
+              innovative and efficient web-based software solutions. With
+              expertise in both static and dynamic web application development,
+              I aim to provide a seamless and user-friendly experience for every
+              project I work on. I believe that attention to detail and
+              commitment to clean code are essential, so that the solutions I
+              create not only work well, but are easy to maintain and can scale
+              as needed.
+            </p>
+            <p>
+              Besides having technical skills, I also have an entertaining
+              nature and enjoy making people laugh. I believe that humor is the
+              key to creating a pleasant atmosphere, both for clients and end
+              users. In every project, I try to bring creativity and humor, so
+              as to inspire and generate joy among those who use my software
+              solutions.
+            </p>
+            <p>
+              As a FullStack Developer, I always try to keep learning and keep
+              abreast of the latest technological developments. I believe that
+              the desire to make a positive impact and bring joy to others,
+              especially my parents whom I really appreciate, is a powerful
+              source of motivation. I have good problem solving skills and enjoy
+              taking on complex challenges. This allows me to create solutions
+              that are elegant and exceed client expectations.
+            </p>
+            <p>
+              My education at SMK Wikrama Bogor has provided a solid foundation
+              for my journey as a FullStack Developer. I am very grateful for
+              this opportunity, because it was here that I developed the
+              necessary skills and knowledge to make my dreams come true.
+              Collaboration is a core value that I hold dear, and I enjoy
+              working in teams where ideas can be shared and innovation can be
+              realized. I am proud of my commitment and committed to
+              continuously growing and contributing to the software development
+              industry.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="./public/image/portrait.png" alt="" />
+            <div class="sosmed-container">
+              <div class="list-sosmed">
+                <a
+                  href="https://www.twitter.com/nama_pengguna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <h3>Follow on Twitter</h3>
+              </div>
+              <div class="list-sosmed">
+                <a
+                  href="https://www.instagram.com/nama_pengguna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <h3>Follow on instagram</h3>
+              </div>
+              <div class="list-sosmed">
+                <a
+                  href="https://github.com/nama_pengguna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <h3>Follow on Github</h3>
+              </div>
+              <div style="margin-bottom: 20px" class="list-sosmed">
+                <a
+                  href="https://www.linkedin.com/in/nama_pengguna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <h3>Follow on Linkedin</h3>
+              </div>
+              <div class="line"></div>
+              <div style="margin-top: 20px" class="list-sosmed">
+                <a href="mailto:alamat_email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <h3>radenraflypradanakusumah@gmail.com</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+      <footer>
+        <div class="container-footer">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Certificate Holder</a></li>
+            <li><a href="">Project</a></li>
+          </ul>
+          <div class="brand-footer">
+            <h4>© 2023 TECH DENT. All rights reserved.</h4>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".header").classList.add("visible")
+      })
+
+      var prevScrollPos = window.pageYOffset
+
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset
+
+        if (prevScrollPos > currentScrollPos && currentScrollPos > 0) {
+          document.querySelector(".header").classList.add("visible")
+        } else {
+          document.querySelector(".header").classList.remove("visible")
+        }
+
+        prevScrollPos = currentScrollPos
+      }
+    </script>
+  </body>
+</html>
