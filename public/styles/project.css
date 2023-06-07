@@ -86,7 +86,7 @@ body {
 
 .profile-container h1 {
   width: 50vw;
-  margin-top: -16.5px;
+  margin-top: -20px;
   margin-bottom: 0;
   font-size: 4vw;
   line-height: 1.2;
@@ -124,7 +124,8 @@ body {
 .background-project img {
   border: 1px solid #71717a;
   border-radius: 50%;
-  width: 1.7vw;
+  width: 3vw;
+  position: relative;
 }
 
 .article-list{
@@ -133,6 +134,8 @@ body {
   position: relative;
   cursor: pointer;
   box-sizing: border-box;
+  border-radius: 20px;
+  background-color: rgba(96, 96, 96, 0.6);
 }
 
 .overlay {
@@ -144,7 +147,6 @@ body {
   background-color: rgba(128, 128, 128, 0.6);
   width: 100%;
   height: 100%;
-  opacity: 0.4;
 }
 
 
@@ -237,6 +239,84 @@ footer {
 
 /* max-width ini ketika lebar viewport kurang dari atau sama dengan 768px */
 @media (max-width: 768px) {
+  .header ul{
+    gap: 30px;
+    padding: 2vw 3.5vw;
+  }
+
+  .header a {
+    font-size: 3.5vw;
+  }
+
+  .logo-header {
+    margin-top: 0;
+    left: 5%;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .logo-header img {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .profile-container h1 {
+    width: 100vw;
+    text-align: left;
+    font-size: 6vw;
+    width: 100%;
+  }
+
+  .content-profile p {
+    font-size: 4.5vw;
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+
+  .background-project {
+    padding: 2px;
+    width: 8.3vw;
+  }
+
+  .background-project img {
+    width: 8vw;
+  }
+
+  .article-list{
+    margin-bottom: 0;
+    padding: 15px;
+  }
+  
+  .article-list h3 {
+    font-size: 4.2vw;
+    margin-bottom: 4px;
+  }
+
+  .article-list p{
+    font-size: 3.3vw;
+    margin-top: 7px;
+    margin-bottom: 26px;
+    text-overflow: ellipsis;
+  }
+
+  .tech-project{
+    gap: 5px;
+  }
+
+  .tech-project h4{
+    padding: 1vw 1vw;
+    font-size: 2.3vw;
+    margin: 0;
+    background-color: #1aa396;
+  }
+  
+  .article-list a{
+    font-size: 3.3vw;
+  }
+
   .article-container{
     grid-template-columns: unset;
     grid-template-rows: auto;
@@ -258,10 +338,15 @@ footer {
     margin: 0;
   }
 
+  .container-footer ul li a {
+    font-size: 3.5vw;
+  }
+
   .brand-footer h4 {
     text-align: center;
+    font-size: 3vw;
+    margin: 5px;
   }
-  
 }
 
 /* max-widt ini ketika lebar viewport lebih besar dari 768px */

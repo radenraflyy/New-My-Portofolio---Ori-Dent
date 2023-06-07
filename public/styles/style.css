@@ -124,11 +124,13 @@ body{
 }
 
 .article-list{
+  background-color: rgba(113, 113, 122, 0.4);
   margin-bottom: 20px;
   padding: 15px;
   position: relative;
   cursor: pointer;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .overlay {
@@ -136,13 +138,11 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: rgba(128, 128, 128, 0.6);
   width: 100%;
   height: 100%;
-  opacity: 0.4;
 }
-
 
 .article-list:hover .overlay {
   display: block;
@@ -189,6 +189,7 @@ body{
 }
 
 .title-skils i{
+  margin-left: 18px;
   font-size: 1.5vw;
 }
 
@@ -198,7 +199,7 @@ body{
   gap: 10px;
   color: #a1a1aa;
   font-size: 1vw;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .skills i{
@@ -207,7 +208,7 @@ body{
 
 .skill1{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
 }
 
@@ -228,16 +229,16 @@ body{
 
 .title-experience h3{
   font-size: 1.3vw;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .title-experience h3::after {
   content: "";
   display: flex;
-  width: 187%;
+  width: 212%;
   height: 1px;
   background-color: #a1a1aa;
-  /* margin-top: 5px; */
+  margin-top: 5px;
   margin-left: 37%;
 }
 
@@ -247,10 +248,11 @@ body{
 
 .container-experience{
   display: grid;
+  width: 100%;
   grid-template-columns: auto auto;
-  padding: 10px;
+  padding: 12px;
   gap: 12px;
-  margin-top: -30px;
+  margin-top: -25px;
 }
 
 .list-experience{
@@ -316,6 +318,66 @@ footer {
 
 /* max-width ini ketika lebar viewport kurang dari atau sama dengan 768px */
 @media (max-width: 768px) {
+  .header ul{
+    gap: 30px;
+    padding: 2vw 3.5vw;
+  }
+
+  .header a {
+    font-size: 3.5vw;
+  }
+
+  .logo-header {
+    margin-top: 0;
+    left: 5%;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .logo-header img {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content-profile {
+    width: 100%;
+    order: 1;
+    margin-top: 30px;
+  }
+
+  .profile-container h1 {
+    font-size: 7.7vw;
+  }
+  
+  .content-profile p {
+    font-size: 3.8vw;
+    width: 100%;
+  }
+
+  .image-container{
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .image-container img {
+    border-radius: 10px;
+    width: 40vw;
+    object-fit: cover;
+  }
+
+  .sosmed i{
+    font-size: 5vw;
+    margin-top: 3vw;
+    padding: 0 10px 0 0px;
+  }
+
   .article-container{
     grid-template-columns: unset;
     grid-template-rows: auto;
@@ -325,16 +387,70 @@ footer {
 
   .article-list {
     margin-bottom: 10px;
+    padding: 15px;
+  }
+
+  .article-list h3 {
+    font-size: 4.6vw;
+    margin-bottom: 4px;
+  }
+
+  .article-list p{
+    font-size: 3.6vw;
+    margin-top: 7px;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+  }
+
+  .article-list a{
+    font-size: 3.5vw;
+  }
+
+  .wrapper-skils{
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .title-skils h1 {
+    color: #f4f4f5;
+    font-size: 3.5vw;
+  }
+  
+  .title-skils i{
+    margin-left: 4px;
+    font-size: 5vw;
+  }
+  
+  .skills{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #a1a1aa;
+    font-size: 2.5vw;
+    margin-left: 20px;
+  }
+
+  .skills i{
+    font-size: 5.7vw;
   }
 
   .wrapper-experience{
     margin-top: 30px;
   }
 
+  .title-experience{
+    padding: 10px 0px;
+  }
+
   .title-experience h3{
+    font-size: 4vw;
     margin-bottom: 10px;
   }
-  
+
+  .title-experience i {
+    font-size: 4.2vw;
+  }
+
   .title-experience h3::after {
     content: "";
     display: flex;
@@ -342,6 +458,29 @@ footer {
     margin-top: 0px;
     margin-left: 3%;
     margin-bottom: 2px;
+  }
+
+  .container-experience{
+    grid-template-columns: auto;
+    padding: 12px 0;
+  }
+
+  .list-experience h4{
+    margin: 0 0 7px 3px;
+    font-size: 4.5vw;
+  }
+  
+  .list-experience h5{
+    color: #E4E4E7;
+    font-weight: 400;
+    margin: 3px;
+    font-size: 3.7vw;
+  }
+  
+  .list-experience p{
+    color: #a1a1aa;
+    margin: 3px;
+    font-size: 3.5vw;
   }
 
   .content-profile p {
@@ -362,10 +501,15 @@ footer {
     margin: 0;
   }
 
+  .container-footer ul li a {
+    font-size: 3.5vw;
+  }
+
   .brand-footer h4 {
     text-align: center;
+    font-size: 3vw;
+    margin: 5px;
   }
-  
 }
 
 /* max-widt ini ketika lebar viewport lebih besar dari 768px */
