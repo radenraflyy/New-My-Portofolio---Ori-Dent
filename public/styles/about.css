@@ -239,15 +239,18 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
   }
 
   .content-profile h1 {
-    text-align: left;
+    margin: 0 auto;
+    text-align: center;
     font-size: 6.5vw;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .content-profile p {
+    text-align: center;
     margin-top: 0;
     font-size: 4vw;
     width: 100%;
